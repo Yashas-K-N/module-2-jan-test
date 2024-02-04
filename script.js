@@ -23,6 +23,10 @@ inputbox.addEventListener("keyup", function(event){
        let li = document.createElement("li");
        li.innerHTML = inputbox.value;
        list.appendChild(li);
-  }
+       let span = document.createElement("span");
+       span.innerHTML="\u00d7"
+       li.appendChild(span);
+  } 
+  inputbox.value="";
 }
  
