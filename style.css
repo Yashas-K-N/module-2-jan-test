@@ -38,7 +38,7 @@
     
 
 }
-
+ 
 .butt{
     position: relative;
     left: 360px;
@@ -52,10 +52,9 @@
 }
 .posi{
     position: sticky;
+    top:400px;
 }
-
-
-
+ 
 
 .boxi li{
     position: relative;
@@ -65,9 +64,29 @@
     padding: 16px;
     width: 736px;
     height: 72px;
-    cursor: pointer;
+    cursor:pointer;
     border-radius: 7px;
     color: white;
     left:352px;
+    gap: 20px;
+    
+
+}
+
+.empty{
+    position: relative;
+    left:24rem;
+    top:2rem;
+    width: 736px;
+    height: 222px;
+    background-color:#333333 ;
+}
+
+.start {
+    position: relative;
+    
+    top:4rem;
+    display: flex;
+    justify-content: space-around;
 
 }
