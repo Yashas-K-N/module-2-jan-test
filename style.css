@@ -1,0 +1,42 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.body{
+    background-color: rgba(11, 11, 11, 0.797);
+}
+
+.nav{
+    background-color: black;
+    height: 150px;
+}
+
+.logo{
+    
+    position:relative;
+    left: 700px;
+    top:50px;
+
+}
+
+.sec-div>ul{
+    display: flex;
+}
+
+
+.boxi>input{
+    width: 736px;
+    height: 52px;
+    background-color:rgba(14, 14, 14, 0.858);
+    border-radius: 7px;
+    border-style:none;
+    position: relative;
+    left: 352px;
+}
+
+.butt{
+    position: relative;
+    left: 360px;
+}
