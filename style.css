@@ -99,5 +99,40 @@
     top: 15rem;
     z-index:1;
     gap:8px;
+    overflow: auto;
    
+}
+@media (max-width:700px){
+    .body{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .sec-div{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .boxi{
+        flex-wrap: wrap;
+    }
+
+    #list{
+        flex-wrap: wrap;
+    }
+
+    .butt{
+        flex-wrap: wrap;
+    }
+
+    .posi{
+        flex-wrap:wrap;
+    }
+    .todo{
+        flex-wrap: wrap;
+    }
+    .empty{
+        flex-wrap: wrap;
+    }
+    .start{
+        flex-wrap:wrap;
+    }
 }
