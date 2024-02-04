@@ -21,12 +21,12 @@
 
 }
 
-.sec-div>ul{
+.sec-div>div>ul {
     display: flex;
 }
 
 
-.boxi>input{
+.boxi input{
     width: 736px;
     height: 52px;
     background-color:rgba(14, 14, 14, 0.858);
@@ -34,9 +34,40 @@
     border-style:none;
     position: relative;
     left: 352px;
+    box-shadow: 5px 5px 5px;
+    
+
 }
 
 .butt{
     position: relative;
     left: 360px;
+}
+.todo{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+    
+    
+}
+.posi{
+    position: sticky;
+}
+
+
+
+
+.boxi li{
+    position: relative;
+    display:flex;
+    align-items: center;
+    background-color:rgba(14, 14, 14, 0.858); 
+    padding: 16px;
+    width: 736px;
+    height: 72px;
+    cursor: pointer;
+    border-radius: 7px;
+    color: white;
+    left:352px;
+
 }
