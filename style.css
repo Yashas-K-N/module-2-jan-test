@@ -1,4 +1,4 @@
-*{
+/* *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -12,18 +12,20 @@
 .nav{
     background-color: black;
     height: 150px;
+    width:100vw;
 }
 
 .logo{
     
-    position:relative;
-    left: 700px;
-    top:50px;
+    justify-content: center;
+    align-items: center;
 
+    display: flex;
 }
 
-.sec-div>div>ul {
-    display: flex;
+.sec-div>div>ul{
+    display:flex;
+
 }
 
 
@@ -32,10 +34,9 @@
     height: 52px;
     background-color:rgba(14, 14, 14, 0.858);
     
-    border-radius: 7px;
-    border-style:none;
-    position: relative;
-    left: 352px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 352px;
     box-shadow: 5px 5px 5px ;
     
 
@@ -43,8 +44,8 @@
 
  
 .butt{
-    position: relative;
-    left: 360px;
+    justify-content:center;
+
 }
 .todo{
     display: flex;
@@ -95,44 +96,244 @@
 }
 
 #list{
-    position: absolute;
+    position: sticky;
+    
     top: 15rem;
     z-index:1;
-    gap:8px;
-    overflow: auto;
+   
    
 }
-@media (max-width:700px){
+ @media (max-width:750px) 
+    
+ {
     .body{
         flex-wrap: wrap;
         flex-direction: column;
+        display: block;
     }
     .sec-div{
         flex-wrap: wrap;
         flex-direction: column;
+        display: block;
     }
-    .boxi{
-        flex-wrap: wrap;
-    }
+    
 
     #list{
         flex-wrap: wrap;
+        flex-direction: column;
+        display: block;
     }
 
     .butt{
         flex-wrap: wrap;
+        flex-direction: column;
+        display: block;
     }
 
     .posi{
         flex-wrap:wrap;
+        flex-direction: column;
+        display: block;
     }
     .todo{
         flex-wrap: wrap;
+        flex-direction: column;
+        display: block;
     }
-    .empty{
-        flex-wrap: wrap;
-    }
+    
     .start{
         flex-wrap:wrap;
+        flex-direction: column;
+        display: block;
     }
 }
+@media (max-width:600px){
+    .todo>img{
+        flex-wrap: wrap;
+        display: block;
+    }
+    .empty>img{
+        flex-wrap: wrap;
+        display: block;
+        width: fit-content;
+        height: fit-content;
+    }
+    .boxi>input{
+        flex-wrap: wrap;
+        display: block;
+        width: fit-content;
+        height: fit-content;
+    }
+    .logo>img{
+        flex-wrap: wrap;
+        display: block;
+        width: fit-content;
+        height: fit-content;
+    }
+
+} */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #262626;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  header {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0d0d0d;
+  }
+  
+  header svg {
+    margin: 10px;
+  }
+  
+  header h1 {
+    font-size: 47px;
+  }
+  
+  /* Styling main section */
+  
+  main {
+    margin-top: 10px;
+    width: 80vw;
+    min-width: 560px;
+  }
+  
+  #task-form {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+  }
+  
+  #task-input {
+    padding: 15px;
+    color: white;
+    background-color: #0d0d0d;
+    border: none;
+    border-radius: 8px;
+    flex-grow: 1;
+  }
+  
+  #due-date-input,
+  #search-input {
+    padding: 15px;
+    color: #808080;
+    background-color: #0d0d0d;
+    border: none;
+    border-radius: 8px;
+  }
+  
+  #task-form button {
+    padding: 15px;
+    background-color: #1e6f9f;
+    color: #f2f2f2;
+    border: none;
+    border-radius: 8px;
+  }
+  
+  #priority-container {
+    padding: 15px;
+    color: #808080;
+    background-color: #0d0d0d;
+    border: none;
+    border-radius: 8px;
+  }
+  
+  #task-form select {
+    color: #b1afaf;
+    background-color: #0d0d0d;
+    border: none;
+    outline: none;
+  }
+  
+  #filter {
+    font-size: 1.2rem;
+    border-radius: 8px;
+  }
+  
+  /* task container styling */
+  
+  #task-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #task-container > div {
+    border-bottom: 1px solid gray;
+  }
+  
+  #todo,
+  #started,
+  #completed {
+    width: 80%;
+  }
+  
+  .to-do-head,
+  .started-head,
+  .completed-head {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px 20px 0px;
+    color: #4ea8de;
+  }
+  
+  #task-container span {
+    background-color: rgba(128, 128, 128, 0.512);
+    color: #d9d9d9;
+    padding: 2px 8px;
+    border-radius: 10px;
+  }
+  
+  #empty-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 50px;
+  }
+  
+  /* styling task card */
+  
+  .task-item {
+    margin: 5px;
+    border-radius: 8px;
+    background-color: #333333;
+    color: white;
+    padding: 10px;
+  }
+  
+  .task-item > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .buttons button {
+    padding: 5px;
+    background-color: gray;
+    border: none;
+    border-radius: 5px;
+    margin-inline: 5px;
+  }
+  
+  .drop-text {
+    text-align: center;
+    padding: 15px;
+    color: gray;
+  }
